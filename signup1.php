@@ -8,18 +8,20 @@
 </head>
 <body>
 
+	<?php include "layout/nav1.php" ?>
 
-<?php include "layout/nav.php" ?>
+
 
 
 <div class="container-fluid">
 
 
 	
+<?php include "forms/signUp.php" ?>
+	 
 
-
-
-</div>
+ <div class="text-center" style="color: red">Please fill all the forms correctly!</div>
+</div
 
 
 

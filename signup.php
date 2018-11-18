@@ -8,15 +8,20 @@
 </head>
 <body>
 
+	<?php include "layout/nav1.php"; ?>
 
-<?php include "layout/nav.php" ?>
+
 
 
 <div class="container-fluid">
 
 
 	
+<?php include "forms/signUp.php" ?>
 
+
+
+	 
 
 
 </div>

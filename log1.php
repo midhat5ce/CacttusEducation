@@ -9,7 +9,7 @@
 <body>
 
 
-<?php include "layout/nav.php" ?>
+<?php include "layout/nav1.php" ?>
 
 
 <div class="container-fluid">
@@ -17,6 +17,13 @@
 
 	
 
+<?php include "forms/logIn.php" ?>
+<br/>
+
+<div class="text-center" style="color: red">Username or Password Incorrect.Please try again !</div>
+<br/>
+
+<div class="text-center">Not registered yet?<a href="signup.php">click here</a></div>
 
 
 </div>
