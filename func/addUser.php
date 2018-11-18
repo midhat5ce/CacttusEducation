@@ -26,7 +26,9 @@ if(isset($_POST['addUser'])){
     	if (empty($uname) || empty($password) || empty($userCPassword) || empty($fname) || empty($lname) || empty($address) || ($password != $userCPassword)){
 
 
-           header("Location: ../signup1.php");
+            session_start();
+            $_SESSION['message'] = "Please fill all the forms correctly!";
+            header("Location: ../signup.php?message=Wrong!!!");
     		
     		
 		

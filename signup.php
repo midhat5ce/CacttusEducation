@@ -22,7 +22,14 @@
 
 
 	 
+		session_start();
+		if (isset($_SESSION['message'])) {
+			echo " <div class='text-center' style='color: red'>{$_SESSION['message']}!</div>
+</div";
+			
 
+			unset($_SESSION['message']);
+		}
 
 </div>
 
