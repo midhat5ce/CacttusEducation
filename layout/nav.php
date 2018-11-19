@@ -17,7 +17,7 @@
                     </div>
                   </li> -->
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Add Book</a>
+                      <a class="nav-link" href="addbook.php">Add Book</a>
                   </li class="nav-item">
                   <li class="nav-item">
                       <a class="nav-link" href="profili.php">Profile</a>
