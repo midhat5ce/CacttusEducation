@@ -1,5 +1,5 @@
 
-	<form style="width: 500px; margin:auto" method="post" action="func/addUser.php">
+	<form  method="post" action="func/addUser.php">
 		<div class="form-group">
 			<label>Username: </label>
 			<input type="text" name="uname" class="form-control" required autofocus placeholder="Username">
@@ -29,6 +29,12 @@
 			<label>Address: </label>
 			<input type="text" name="address" class="form-control" required  placeholder="Address">
 		</div>
+
+		<div class="form-group">
+			<label>Qyteti: </label>
+			<input type="text" name="qyteti" class="form-control" required  placeholder="Qyteti">
+		</div>
+
 		<button type="submit" name="addUser"class="btn btn-primary">Submit</button>
 
 		

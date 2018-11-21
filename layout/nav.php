@@ -22,6 +22,13 @@
                   <li class="nav-item">
                       <a class="nav-link" href="profili.php">Profile</a>
                   </li>
+
+                  <li class="nav-item">
+
+                    <a class="nav-link" href="../CacttusEducation/logout.php"> <button class="btn btn-outline-dark btn-sm" type="button">Log Out</button></a>
+
+              
+                  </li>
               </ul>
           </div>
     </nav>

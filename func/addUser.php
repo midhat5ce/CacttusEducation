@@ -11,6 +11,7 @@ $userCPassword = "";
 $fname="";
 $lname ="";
 $address="";
+$qyteti="";
 
 
 
@@ -21,6 +22,7 @@ if(isset($_POST['addUser'])){
     $fname = mysqli_real_escape_string($connection, $_POST['fname']);
     $lname = mysqli_real_escape_string($connection, $_POST['lname']);
     $address = mysqli_real_escape_string($connection, $_POST['address']);
+     $qyteti = mysqli_real_escape_string($connection, $_POST['qyteti']);
 
 
     	if (empty($uname) || empty($password) || empty($userCPassword) || empty($fname) || empty($lname) || empty($address) || ($password != $userCPassword)){
@@ -37,15 +39,15 @@ if(isset($_POST['addUser'])){
 
 		    $passwordHash = md5($password);
             
-            $insertUserQuery = "INSERT INTO users (user_uname, user_password, user_fname, user_lname,user_address) 
-                                VALUES('$uname', '$passwordHash', '$fname', '$lname' ,'$address')";
+            $insertUserQuery = "INSERT INTO users (user_uname, user_password, user_fname, user_lname,user_address,user_city) 
+                                VALUES('$uname', '$passwordHash', '$fname', '$lname' ,'$address' ,'$qyteti')";
 		
 	
             $result = mysqli_query($connection, $insertUserQuery);
   
 
 
-		header("Location: ../main.php");
+		header("Location: ../index.php");
    
     }
 }

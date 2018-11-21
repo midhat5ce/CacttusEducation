@@ -1,4 +1,4 @@
-	<form style="width: 500px; margin:auto" method="post" action="func/logInCheck.php">
+	<form  method="post" action="func/logInCheck.php">
 		<div class="form-group">
 			<label>Username: </label>
 			<input name ="username" type="text" class="form-control" required autofocus placeholder="Username">

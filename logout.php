@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,18 @@
 </head>
 <body>
 
-
-<?php include "layout/nav1.php" ?>
+<?php include "func/sessionLoged.php" ?>
+<?php include "layout/nav.php" ?>
 
 
 <div class="container">
+		
 
+<?php include "forms/logOutForm.php" ?>
 
+	 
 	
 
-<?php include "forms/logIn.php" ?>
-
-
-<?php include"func/sessionIncorrect.php" ?>
-<div class="text-center">Not registered yet?<a href="signup.php">click here</a></div>
 
 
 </div>
