@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2018 at 02:19 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 5.6.35
+-- Generation Time: Nov 21, 2018 at 05:02 PM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `projecti`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `books`
+--
+
+CREATE TABLE `books` (
+  `book_id` int(11) NOT NULL,
+  `u_id` int(11) NOT NULL,
+  `book_name` varchar(255) DEFAULT NULL,
+  `book_author` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`book_id`, `u_id`, `book_name`, `book_author`) VALUES
+(1, 5, 'Gue Gue Pici Gue', 'Naim Frasheri'),
+(2, 5, 'Art of war', 'Sun Tzu'),
+(3, 5, 'Intellegent Investitor', 'Braham Grifin');
 
 -- --------------------------------------------------------
 
@@ -46,11 +68,19 @@ INSERT INTO `users` (`user_id`, `user_uname`, `user_password`, `user_fname`, `us
 (1, 'test', 'e358efa489f58062f10dd7316b65649e', 'test_name', 'test_lname', 'Mitrovica', 'Prizren'),
 (2, 'a', '0cc175b9c0f1b6a831c399e269772661', 'a', 'a', 'Mitrovica', ''),
 (3, 'test1', '4a8a08f09d37b73795649038408b5f33', 'testName', 'testLastn', 'testAdress', 'Mitrovica'),
-(4, 'r', '4b43b0aee35624cd95b910189b3dc231', 'emri', 'mbiemri', 'adasd', 'Mitrovice');
+(4, 'r', '4b43b0aee35624cd95b910189b3dc231', 'emri', 'mbiemri', 'adasd', 'Mitrovice'),
+(5, 'dreni', '0cc175b9c0f1b6a831c399e269772661', 'dren', 'kelmendi', 'asdasd', 'Prishtine');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `books`
+--
+ALTER TABLE `books`
+  ADD PRIMARY KEY (`book_id`),
+  ADD KEY `u_id` (`u_id`);
 
 --
 -- Indexes for table `users`
@@ -63,10 +93,26 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `books`
+--
+ALTER TABLE `books`
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `books`
+--
+ALTER TABLE `books`
+  ADD CONSTRAINT `books_ibfk_1` FOREIGN KEY (`u_id`) REFERENCES `users` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

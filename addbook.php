@@ -11,26 +11,14 @@
 
 
 
+<div class="container">
+
+	<?php include "forms/addBookForm.php" ?>
+	<?php include"func/sessionIncorrect.php" ?>
+	
+</div>
 
 
-<form style="width: 500px; margin:auto" method="post" action="func/addUser.php">
-		
-
-		<div class="form-group">
-			<label><strong>Book Name:</strong> </label>
-			<input type="text" name="bname" class="form-control" required  placeholder="Book Name">
-		</div>
-		<div class="form-group">
-			<label><strong>Author:</strong> </label>
-			<input type="text" name="author"   class="form-control"  required  placeholder="Author">
-		</div>
-		
-
-		
-		<button type="submit" name="addUser"class="btn btn-primary">Submit</button>
-
-		
-	</form>
 
 
 
