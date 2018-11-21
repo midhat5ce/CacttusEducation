@@ -27,7 +27,7 @@
 			unset($_SESSION['message']);
 		} ?>
 
-
+	<?php include"forms/changeCity.php" ?>
 
 
 </div>

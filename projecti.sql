@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2018 at 01:29 PM
+-- Generation Time: Nov 21, 2018 at 02:19 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 5.6.35
 
@@ -43,10 +43,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_uname`, `user_password`, `user_fname`, `user_lname`, `user_address`, `user_city`) VALUES
-(1, 'test', 'e358efa489f58062f10dd7316b65649e', 'test_name', 'test_lname', 'Mitrovica', ''),
+(1, 'test', 'e358efa489f58062f10dd7316b65649e', 'test_name', 'test_lname', 'Mitrovica', 'Prizren'),
 (2, 'a', '0cc175b9c0f1b6a831c399e269772661', 'a', 'a', 'Mitrovica', ''),
 (3, 'test1', '4a8a08f09d37b73795649038408b5f33', 'testName', 'testLastn', 'testAdress', 'Mitrovica'),
-(4, 'r', '4b43b0aee35624cd95b910189b3dc231', 'emri', 'mbiemri', 'adasd', 'Prishtine');
+(4, 'r', '4b43b0aee35624cd95b910189b3dc231', 'emri', 'mbiemri', 'adasd', 'Mitrovice');
 
 --
 -- Indexes for dumped tables
