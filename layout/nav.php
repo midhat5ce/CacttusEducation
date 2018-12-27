@@ -25,8 +25,29 @@
 
                   <li class="nav-item">
 
-                    <a class="nav-link" href="../CacttusEducation/logout.php"> <button class="btn btn-outline-dark btn-sm" type="button">Log Out</button></a>
+                   <!--  <a class="nav-link" href="../CacttusEducation/logout.php"> <button class="btn btn-outline-dark btn-sm" type="button">Log Out</button></a> -->
+                              <button class="btn btn-info" data-toggle="modal" data-target="#logOutModel">Log Out</button>
 
+                    <div class="modal" id="logOutModel">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Log Out</h5>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Are you sure you want to Log Out?</h5>
+                           
+                          </div>
+                           <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <a class="nav-link" href="../CacttusEducation/func/logOut.php">Yes</a>
+                           
+                          </div>
+                                       
+                        </div>
+                      </div>
+                   </div>
               
                   </li>
               </ul>

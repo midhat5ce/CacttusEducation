@@ -25,16 +25,21 @@ if(isset($_POST['addUser'])){
      $qyteti = mysqli_real_escape_string($connection, $_POST['qyteti']);
 
 
-    	if (empty($uname) || empty($password) || empty($userCPassword) || empty($fname) || empty($lname) || empty($address) || ($password != $userCPassword)){
+    	if (empty($uname) || empty($password) || empty($userCPassword) || empty($fname) || empty($lname) || empty($address) ){
 
 
             session_start();
-            $_SESSION['message'] = "Please fill all the forms correctly!";
+            $_SESSION['message'] = "Please fill all the forms !";
             header("Location: ../signup.php?message=Wrong!!!");
     		
     		
 		
-		}else{
+		}elseif(($password != $userCPassword)){
+             session_start();
+            $_SESSION['message'] = "Passwords do not match!";
+            header("Location: ../signup.php?message=Wrong!!!");
+
+        }else{
 
 
 		    $passwordHash = md5($password);

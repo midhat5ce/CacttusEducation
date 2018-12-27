@@ -1,31 +1,22 @@
 <?php include "func/getProfile.php" ?>
 
 
-    	<table class="table">
-            <thead>
-                <tr>
-                   
-                    <th>Username </th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Addresa </th>
-                    <th>Qyteti</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  
-                    <td><?= $userName ?></td>
-                    <td><?= $firstName ?></td>
-                    <td><?= $lastName ?></td>
-                    <td><?= $addres ?></td>
-                    <td><?= $qyteti ?></td>
-                </tr>
-   
-            </tbody>
-        </table>
-   
 
+<div class="col-md-5 m-auto">
+        
+
+
+            <ul class="list-group mb-5">
+            <li class="list-group-item">Username :  <?= $userName ?> <button class="btn btn-primary float-right" >Edit</button></li>
+            <li class="list-group-item">First Name :  <?= $firstName ?> <button class="btn btn-primary float-right" >Edit</button></li>
+            <li class="list-group-item">Last Name :  <?= $lastName ?> <button class="btn btn-primary float-right" >Edit</button></li>
+            <li class="list-group-item">Address :  <?= $addres ?><button class="btn btn-primary float-right" >Edit</button></li>
+            <li class="list-group-item">City :  <?= $qyteti ?><button class="btn btn-primary float-right" >Edit</button></li>
+            </ul>
+            
+
+
+</div>
 
 
 
