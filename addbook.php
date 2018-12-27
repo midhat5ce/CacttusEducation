@@ -7,14 +7,21 @@
 	<link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
+	<?php include "func/sessionLoged.php" ?>
 	<?php include "layout/nav.php" ?>
 
 
 
 <div class="container">
-
+	
 	<?php include "forms/addBookForm.php" ?>
-	<?php include"func/sessionIncorrect.php" ?>
+	<?php 	if (isset($_SESSION['message'])) {
+
+			echo " <div class='text-center text-danger'> {$_SESSION['message']}! </div>";
+			
+
+			unset($_SESSION['message']);
+		} ?>
 	
 </div>
 
