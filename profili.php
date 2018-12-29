@@ -15,9 +15,11 @@
 
 <div class="container">
 
-
+	<div class="col-md-8 m-auto">
 		<?php include"profileTable.php" ?>
-	
+		<?php include"forms/changePassForm.php" ?>
+	</div>
+		
 
 	<?php 	if (isset($_SESSION['message'])) {
 
@@ -26,9 +28,8 @@
 
 			unset($_SESSION['message']);
 		} ?>
-		<?php include"forms/changePassForm.php" ?>
-	<!-- <?php include"forms/changeCity.php" ?> -->
-
+		
+	
 
 </div>
 

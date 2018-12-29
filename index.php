@@ -16,7 +16,42 @@
 <div class="container">
 
 
-	
+	<?php 
+
+    
+    $connection = mysqli_connect("localhost", "root", "", "projecti");
+    
+  
+
+ 
+
+
+
+	   $id=$_SESSION['user_id'];
+
+
+     $query ="select u.user_id,u.user_fname,u.user_lname,u.user_address,b.u_id,b.book_name,b.book_author,b.image from books b join users u on u.user_id = b.u_id where b.available = 1 and not b.u_id = 5 limit 3";
+
+
+    $result = mysqli_query($connection, $query);
+    while ($row = mysqli_fetch_assoc($result)){ 
+
+    	
+                    echo "<img  src='image/".$row['image']."'>";
+                    echo "<p>".$row['book_name']."</p>";
+                    echo "<p>".$row['book_author']."</p>";
+                    echo "<p>".$row['user_fname']."</p>";
+                    echo "<p>".$row['user_lname']."</p>";
+                    echo "<p>".$row['user_address']."</p>";
+                    
+     
+     
+    	
+    }
+		
+
+
+      ?>
 
 
 

@@ -1,4 +1,4 @@
-   <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse-btn-1">Change Password</button>
+   <button class="btn btn-primary float-right mb-4" data-toggle="collapse" data-target="#collapse-btn-1">Change Password</button>
    
     <div class="collapse mb-5 m-auto" id="collapse-btn-1">
       <div class="card">

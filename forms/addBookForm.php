@@ -99,8 +99,8 @@ if(isset($_POST['addBook'])){
 
 
 			    	
-			    	 $inserBookQuery = "INSERT INTO books (u_id, book_name, book_author,category,year,isbn,image ) 
-	                                VALUES('$id', '$bname', '$author','$category','$year','$isbn','$fileupload')";
+			    	 $inserBookQuery = "INSERT INTO books (u_id, book_name, book_author,category,year,isbn,image,available ) 
+	                                VALUES('$id', '$bname', '$author','$category','$year','$isbn','$fileupload',1)";
 			
 		
 	            $result1 = mysqli_query($connection, $inserBookQuery);
