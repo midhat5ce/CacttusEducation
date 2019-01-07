@@ -1,5 +1,5 @@
 
-    <nav class="navbar navbar-expand-sm  mb-3" style=" background-color:#3B3B3B;font-size: 20px;height: 70px;">
+    <nav class="navbar navbar-expand-sm  navbar-light bg-light mb-3 " >
         <div class="container" style="margin-right: 45px" >
           <a class="navbar-brand " style=" margin-left: -100px; margin-bottom: -40px; margin-top: -40px " href="index.php"><img src="image/logo.png" height="65px" width="110"></a>
               <ul class="navbar-nav">
