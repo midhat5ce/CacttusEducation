@@ -3,8 +3,8 @@
 
    <button class="btn btn-primary  mb-4" data-toggle="collapse" data-target="#collapse-btn-2">Change Profile</button>
    
-    <div class="collapse mb-5 m-auto" id="collapse-btn-2">
-      <div class="card">
+    <div class="collapse mb-5 m-auto" id="collapse-btn-2" >
+      <div class="card" >
         <div class="card-body">
             <div class="col-md-5 m-auto">
               <form  method="post" action="func/changeProfile.php">

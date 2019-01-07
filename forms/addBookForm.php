@@ -24,7 +24,7 @@
 		</div>
 		<div class="col-md-6 m-auto">
 			<label><strong>Image:</strong></label><br>
-			<input type="file" name="fileupload" value="fileupload" id="fileupload">
+			<input type="file" name="fileupload" value="fileupload" id="fileupload" required>
 		</div> 	<br>
 			<div class="col-md-6 m-auto">	
 			<button type="submit" name="addBook" class="btn btn-primary">Submit</button>

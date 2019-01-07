@@ -1,7 +1,10 @@
 	<form  method="post" action="func/logInCheck.php">
 		
 		<div class="col-md-6 m-auto">
-			<label>Username: </label>
+
+<img src="image/logo.png" height="" width=" 300px" style="margin-left:100px; ">
+
+			</br><label>Username: </label>
 			<input name ="username" type="text" class="form-control" required autofocus placeholder="Username">
 		</div>
 
